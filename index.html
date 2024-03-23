@@ -4,9 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>留言板</title>
-    <link rel="icon" href="/11.png">
-    <link rel="stylesheet" href="https://11.csy2022.top/waline.css">
+    <title>胡元浩的代码保存站</title>
+    <link rel="stylesheet" href="/waline.css">
     <style>
     color-scheme: light dark;
     background-color: color-mix(in srgb, Canvas, CanvasText 2.5%);
@@ -14,7 +13,7 @@
     </style>
     <script type="module">
     import { init } from 'https://npm.onmicrosoft.cn/@waline/client@v3/dist/waline.js';
-    const locale = {nick: '昵称（填写QQ号有惊喜）',mail: '邮箱（可不填）',link: '网址（可不填）',admin: '站长',reactionTitle: '描述一下你的心情:',comment: '留言',placeholder: '以手写心，畅所欲言。',sofa: '来留言吧～',submit: '留言',login: '登录（发留言不用登录）',};
+    const locale = {nick: '昵称',mail: '邮箱（可不填）',link: '网址（可不填）',admin: '站长',reactionTitle: 'Let's Coding:',comment: '保存',placeholder: 'Code is code,when it's running, warm the world.',sofa: '来Coding吧～',submit: '保存',login: '登录（可不用）',};
     init({
     el: '#waline',
     serverURL: 'https://comments.csy2022.top',

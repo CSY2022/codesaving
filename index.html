@@ -4,8 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>胡元浩的代码保存💾站</title>
-    <link rel="stylesheet" href="https://hyh.csy2022.top/waline.css">
+    <title>留言板</title>
+    <link rel="icon" href="/11.png">
+    <link rel="stylesheet" href="https://11.csy2022.top/waline.css">
     <style>
     color-scheme: light dark;
     background-color: color-mix(in srgb, Canvas, CanvasText 2.5%);
@@ -13,12 +14,12 @@
     </style>
     <script type="module">
     import { init } from 'https://npm.onmicrosoft.cn/@waline/client@v3/dist/waline.js';
-    const locale = {nick: '昵称',mail: '邮箱（可不填）',link: '网址（可不填）',admin: '站长',reactionTitle: '输入你的代码:',comment: '留言',placeholder: 'Code is code,when it's running, warm the world.',sofa: '来 Coding 吧～',submit: '保存',login: '登录(可不用)',};
+    const locale = {nick: '昵称（填写QQ号有惊喜）',mail: '邮箱（可不填）',link: '网址（可不填）',admin: '站长',reactionTitle: '描述一下你的心情:',comment: '留言',placeholder: '以手写心，畅所欲言。',sofa: '来留言吧～',submit: '留言',login: '登录（发留言不用登录）',};
     init({
     el: '#waline',
     serverURL: 'https://comments.csy2022.top',
     search: false,
-    reaction: false,
+    reaction: true,
     comment: true,
     pageview: true,
     lang: "zh-CN",
@@ -28,13 +29,12 @@
 </head>
 <body><br>
     <div style="text-align: center">
-        <h1 style="color: #5672CD;">胡元浩的代码保存💾站</h1>
+        <h1 style="color: #5672CD;">留言板</h1>
     </div>
     <h5><br></h5>
-    <h3>Hello World.</h3><br>
+    <h3>以手写心，畅所欲言。</h3><br>
     <h3><strong>Tips:</strong><br>
-    </h3>1. 保存<strong style="color: #5672CD;">不用填 邮箱 网址 </strong>这两项，<strong style="color: #5672CD;">也不用登录</strong>，写完后点保存就可以了。<br><br>2. <strong style="color: #5672CD;">网站由陈思源和 Waline 评论系统支持</strong>。如果加载较慢，请耐心等待，这一定是因为陈思源偷懒了。<br><br>3. 最重要的一点:保存全量支持<strong style="color: #5672CD;">Markdown</strong>语法，如果要保存Python代码<strong style="color: #5672CD;">请务必以以下格式填写</strong>(这样才能保持代码的缩进)：<br><br>```py<br>这里写你的代码<br>```<br>
+    </h3>1. <strong style="color: #5672CD;">文明</strong>用语，以礼待人。<br><br>2. 留言时<strong style="color: #5672CD;">不用填 邮箱 网址 </strong>这两项，<strong style="color: #5672CD;">也不用登录</strong>，写完后点留言就可以了。<br><br>3. <strong style="color: #5672CD;">留言板由 Waline 评论系统支持</strong>。如果加载较慢，请耐心等待。<br><br>4. 悄悄告诉你: 昵称不填可以 <strong style="color: #5672CD;">匿名</strong>，填写QQ号可以 <strong style="color: #5672CD;">自动获取你的QQ头像</strong>。<br><br>
     <div id="waline" style="max-width: 800px;margin: 0 auto;"></div>
 </body>
-
 </html>

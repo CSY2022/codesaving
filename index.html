@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>胡元浩的代码保存💾站</title>
+    <link rel="icon" href="/11.png">
+    <link rel="stylesheet" href="https://11.csy2022.top/waline.css">
+    <style>
+    color-scheme: light dark;
+    background-color: color-mix(in srgb, Canvas, CanvasText 2.5%);
+    color: color-mix(in srgb, CanvasText, Canvas 15%);
+    </style>
+    <script type="module">
+    import { init } from 'https://npm.onmicrosoft.cn/@waline/client@v3/dist/waline.js';
+    const locale = {nick: '昵称',mail: '邮箱（可不填）',link: '网址（可不填）',admin: '站长',reactionTitle: '输入你的代码:',comment: '留言',placeholder: 'Code is code,when it's running, warm the world.',sofa: '来 Coding 吧～',submit: '保存',login: '登录(可不用)',};
+    init({
+    el: '#waline',
+    serverURL: 'https://comments.csy2022.top',
+    search: false,
+    reaction: true,
+    comment: true,
+    pageview: true,
+    lang: "zh-CN",
+    locale,
+    emoji: ['https://npm.onmicrosoft.cn/@waline/emojis@1.2.0/bilibili','https://npm.onmicrosoft.cn/@waline/emojis@1.2.0/bmoji','https://npm.onmicrosoft.cn/@waline/emojis@1.2.0/qq','https://npm.onmicrosoft.cn/@waline/emojis@1.2.0/weibo','https://npm.onmicrosoft.cn/@waline/emojis@1.2.0/tieba'],})
+</script>
+</head>
+<body><br>
+    <div style="text-align: center">
+        <h1 style="color: #5672CD;">胡元浩的代码保存💾站</h1>
+    </div>
+    <h5><br></h5>
+    <h3>Hello World.</h3><br>
+    <h3><strong>Tips:</strong><br>
+    </h3>1. 保存<strong style="color: #5672CD;">不用填 邮箱 网址 </strong>这两项，<strong style="color: #5672CD;">也不用登录</strong>，写完后点保存就可以了。<br><br>2. <strong style="color: #5672CD;">网站由陈思源和 Waline 评论系统支持</strong>。如果加载较慢，请耐心等待，这一定是因为陈思源偷懒了。<br><br>4. 悄悄告诉你: 昵称不填可以 <strong style="color: #5672CD;">匿名</strong>，填写QQ号可以 <strong style="color: #5672CD;">自动获取你的QQ头像</strong>。<br><br>
+    <div id="waline" style="max-width: 800px;margin: 0 auto;"></div>
+</body>
+
+</html>
